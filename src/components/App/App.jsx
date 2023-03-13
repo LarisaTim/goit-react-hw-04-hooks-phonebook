@@ -6,7 +6,7 @@ import ListContacts from "../ListContacts/ListContacts";
 import Filter from "../Filter/Filter";
 import { getFromLS, setInLS } from "../../utilits/localstorage";
 
-export default function App() {
+export function App() {
   const [contacts, setContacts] = useState(getFromLS("contacts"));
   const [filter, setFilter] = useState("");
 
